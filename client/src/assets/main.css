@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'SF Pro Display';
+        src: url(./font-apple/sf-pro-text_regular.woff2);
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'SF Pro Display';
+        src: url(./font-apple/sf-pro-text_semibold.woff2);
+        font-style: semibold;
+        font-weight: 600;
+        font-display: swap;
+    }
+    *::-webkit-scrollbar {
+        width: 5px;
+    }
+    *::-webkit-scrollbar-track {
+        @apply bg-transparent;
+    }
+    *::-webkit-scrollbar-thumb {
+        @apply bg-gray-300;
+    }
+
+    body {
+        /* @apply bg-F5F5F5; */
+    }
+}
